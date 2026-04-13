@@ -30,7 +30,8 @@ NearestInterpolation<MatType>::
 NearestInterpolation(const std::vector<double> scaleFactors) :
     Layer<MatType>()
 {
-  if (scaleFactors.size() != 2) {
+  if (scaleFactors.size() != 2)
+  {
     throw std::runtime_error("Scale factors must have 2 dimensions");
   }
   this->scaleFactors = std::move(scaleFactors);

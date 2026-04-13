@@ -126,7 +126,6 @@ template<typename U, U> struct SigCheck : std::true_type {};
 } // namespace mlpack
 
 
-
 /*
  * Constructs a template supporting the SFINAE pattern.
  *

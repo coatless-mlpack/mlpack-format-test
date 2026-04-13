@@ -195,7 +195,6 @@ class DAGNetwork
   }
 
 
-
   template<typename OptimizerType, typename... CallbackTypes>
   typename MatType::elem_type Train(MatType predictors,
                                     MatType responses,

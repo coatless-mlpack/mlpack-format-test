@@ -72,7 +72,8 @@ inline void BoundingBoxImage(ImageType& src,
   using ElemType = typename BoundingBoxesType::elem_type;
 
   const size_t imageSize = opts.Width() * opts.Height() * opts.Channels();
-  if (src.n_elem != imageSize) {
+  if (src.n_elem != imageSize)
+  {
     std::ostringstream errMessage;
     errMessage << "BoundingBoxImage(): The size of the image (" << src.n_elem
                << ") does not match the given dimensions ("
@@ -81,7 +82,8 @@ inline void BoundingBoxImage(ImageType& src,
     throw std::logic_error(errMessage.str());
   }
 
-  if (color.n_rows != opts.Channels() || color.n_cols != 1) {
+  if (color.n_rows != opts.Channels() || color.n_cols != 1)
+  {
     std::ostringstream errMessage;
     errMessage << "BoundingBoxImage(): The color vector of shape ("
                << color.n_rows << ", " << color.n_cols << ") does not match "
@@ -89,7 +91,8 @@ inline void BoundingBoxImage(ImageType& src,
     throw std::logic_error(errMessage.str());
   }
 
-  if (bbox.n_rows < 4) {
+  if (bbox.n_rows < 4)
+  {
     std::ostringstream errMessage;
     errMessage << "BoundingBoxImage(): A bounding box is made up of 4 points "
                "but was given " << bbox.n_rows;

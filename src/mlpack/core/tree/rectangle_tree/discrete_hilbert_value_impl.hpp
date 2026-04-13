@@ -275,7 +275,6 @@ CompareValues(const arma::Col<HilbertElemType>& value1,
 }
 
 
-
 template<typename TreeElemType>
 template<typename VecType1, typename VecType2>
 int DiscreteHilbertValue<TreeElemType>::

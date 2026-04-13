@@ -162,7 +162,8 @@ void BatchNorm<MatType>::CustomInitialize(
     MatType& W,
     const size_t elements)
 {
-  if (elements != 2 * inputUnits) {
+  if (elements != 2 * inputUnits)
+  {
     throw std::invalid_argument("BatchNorm::CustomInitialize(): wrong "
         "elements size!");
   }

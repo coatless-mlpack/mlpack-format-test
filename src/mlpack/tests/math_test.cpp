@@ -738,7 +738,8 @@ TEST_CASE("RaggedCubeShuffleTest", "[MathTest][tiny]")
   {
     for (size_t j = 0; j < outputLabels.n_slices; j++)
     {
-      if (outputLabels(0, i, j) < 0) {
+      if (outputLabels(0, i, j) < 0)
+      {
         sliceCount[i] = j;
         break;
       }
